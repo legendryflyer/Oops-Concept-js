@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class person{
+            constructor(name, age){
+                this.name = name
+                this.age = age
+            }
+        
+            displayname(callback) {
+                setTimeout(() => callback(this.name), 2000)
+                
+            }
+
+
+        }
+
+        let a = new person("tavish","20")
+        console.log(a)
+
+
+        function display(){
+            console.log(`My Name is ${name}`)
+        }
+
+
+
+        a.__proto__.displayname = display
+
+
+        let b =  new person('John',30)
+        console.log(b)
+
+        
+
+    </script>
+
+    
+</body>
+</html>
+
