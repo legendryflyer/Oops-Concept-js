@@ -24,7 +24,7 @@ let tav = {
         console.log(`${this.firstName} ${this.lastName}`)
 
         let displayName2 = ()=>{
-            console.log(`${this.firstName}  ${this.lastName}`)  // no scope for this  so it will refer to the window object
+            console.log(`${this.firstName}  ${this.lastName}`)  
         }
         displayName2()
 
